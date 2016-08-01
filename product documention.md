@@ -55,7 +55,7 @@
 [x] *.bar.yourdomain.com => foo.bar.baz.yourdomain.com
 ```
 
-* 添加域名绑定后，需要到域名服务商的 DNS 解析管理中，将推流域名的 CNAME 解析到<bucket>.s1.aicdn.com，将播放域名的 CNAME 解析到 <bucket>.s0.aicdn.com。
+* 添加域名绑定后，需要到域名服务商的 DNS 解析管理中，将推流域名的 CNAME 解析到 `<bucket>.s1.aicdn.com`，将播放域名的 CNAME 解析到 `<bucket>.s0.aicdn.com`。
 
 > 当业务模式为又拍云源时，用户需要将其推流域名和播放域名分别 CNAME 到对应的又拍云内部域名。 推流内部域名为`<bucket>.s1.aicdn.com`，播放内部域名为`<bucket>.s0.aicdn.com`。
 
@@ -87,7 +87,7 @@
 
 开启该配置后，可通过 http://play.domain.com/app/stream.m3u8 对 rtmp://push.domain.com/app/stream 的推流进行播放。
 
-###录播
+### 录播
 > 客户需提供的配置信息：需要录制的拉流 URL  
 > 录制方式：触发 or 定时录制
 
