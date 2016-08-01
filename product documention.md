@@ -86,7 +86,7 @@
 开启该配置后，可通过 http://play.domain.com/app/stream.m3u8 对 rtmp://push.domain.com/app/stream 的推流进行播放。
 
 ###录播
-> 客户需提供的配置信息：需要录制的拉流 URL
+> 客户需提供的配置信息：需要录制的拉流 URL  
 > 录制方式：触发 or 定时录制
 
 录播的主要作用是将推流内容录制成文件，最终用于点播。
