@@ -117,7 +117,8 @@ recorder20160604163702.mp4 为具体的录制文件，recorder 为固定标识�
 
 录制文件所在的路径以 post 请求返回给客户，具体的 json 格式为
 
-{"timestamp": "2016-06-04 16:38:45",   "path": ["http://live-recorder.b0.upaiyun.com/play.domain.com/live/stream/recorder20160604163702.mp4"]}
+{"timestamp": "2016-06-04 16:38:45",  
+ "path": ["http://live-recorder.b0.upaiyun.com/play.domain.com/live/stream/recorder20160604163702.mp4"]}
 
 其中，timestamp 为发送 json 回调任务时间，path 为录制文件具体路径。
 
