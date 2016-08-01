@@ -72,8 +72,8 @@
 #### 源站
 该配置项为可访问的网络地址，可以直接填 IP 地址也可以填写域名地址，现不支持多IP 。如果是域名地址，那么 CDN 在回源时会对该域名地址进行 DNS 解析，然后通过解析出来的 IP 地址再进行访问，因此若解析失败也会导致无法正常回源。
 
-### HTTP-FLV 
-> 输出管理后台：服务 > 基础配置 > HTTP-FLV 输出  
+### HTTP-FLV 输出
+> 管理后台：服务 > 基础配置 > HTTP-FLV 输出  
 > 源站类型：全部
 
 通过管理后台，可以配置任一播放域名作为 HTTP-FLV 的输出域名。
@@ -117,8 +117,7 @@ recorder20160604163702.mp4 为具体的录制文件，recorder 为固定标识�
 
 录制文件所在的路径以 post 请求返回给客户，具体的 json 格式为
 
-{"timestamp": "2016-06-04 16:38:45",   
- "path": ["http://live-recorder.b0.upaiyun.com/play.domain.com/live/stream/recorder20160604163702.mp4"]}
+{"timestamp": "2016-06-04 16:38:45",   "path": ["http://live-recorder.b0.upaiyun.com/play.domain.com/live/stream/recorder20160604163702.mp4"]}
 
 其中，timestamp 为发送 json 回调任务时间，path 为录制文件具体路径。
 
@@ -128,4 +127,4 @@ recorder20160604163702.mp4 为具体的录制文件，recorder 为固定标识�
 
 支持触发式转码，需提前配置需要转码的流地址以及转码的触发后缀，如 需要转码的原始流为：http://play.domain.com/live/stream 触发转码的后缀匹配为 -small，对应的转码模板为 540p(16:9) 当有用户请求 http://play.domain.com/live/stream-small 时触发转码，当最后一个请求该转码流的用户断开连接后，停止转码。
 
-> 转码和录播至少提前两天给出具体需求
+> 转码和录播至少提前两天给出配置需求。
