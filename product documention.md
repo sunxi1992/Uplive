@@ -96,11 +96,10 @@
 又拍录制系统会自动将录制下来的内容上传到又拍云存储后，可以根据云存储获取目录文件列表 来获取相关录制文件列表。
 如果对录制文件格式有其他要求，可在又拍云处理中心对其进行相关处理，比如格式处理，视频拼接，详细请见云处理文档。
 
-录制文件具体路径为：
+录制文件具体路径为：  
 live-recorder.b0.upaiyun.com/play.domain.com/live/stream/recorder20160604163702.mp4  
-
 其中 live-recorder.b0.upaiyun.com 为又拍云默认域名，又拍会将录制文件默认保存在相应空间以这条流 URL 为路径的目录下，即 live-recorder.b0.upaiyun.com/play.domain.com/live/stream/，  
-recorder20160604163702.mp4 为具体的录制文件，recorder 为固定字符，20160604163702 为录制完成时间，mp4为文件类型。 
+recorder20160604163702.mp4 为具体的录制文件，recorder 为固定标识字符，20160604163702 为录制完成时间，mp4为文件类型。   
 如果用又拍 cdn，直接可通过 http://用户加速域名/play.domain.com/live/stream/recorder20160604163702.mp4 来访问
 
 录制支持触发录制与定时录制两种方式。
@@ -116,8 +115,7 @@ recorder20160604163702.mp4 为具体的录制文件，recorder 为固定字符�
 
 录制文件所在的路径以 post 请求返回给客户，具体的 json 格式为
 
-{"timestamp": "2016-06-04 16:38:45", 
-
+{"timestamp": "2016-06-04 16:38:45",   
  "path": ["http://live-recorder.b0.upaiyun.com/play.domain.com/live/stream/recorder20160604163702.mp4"]}
 
 其中，timestamp 为发送 json 回调任务时间，path 为录制文件具体路径。
