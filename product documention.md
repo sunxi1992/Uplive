@@ -103,7 +103,7 @@
 live-recorder.b0.upaiyun.com/play.domain.com/live/stream/recorder20160604163702.mp4  
 其中 live-recorder.b0.upaiyun.com 为又拍云默认域名，又拍会将录制文件默认保存在相应空间以这条流 URL 为路径的目录下，即 live-recorder.b0.upaiyun.com/play.domain.com/live/stream/，  
 recorder20160604163702.mp4 为具体的录制文件，recorder 为固定标识字符，20160604163702 为录制完成时间，mp4为文件类型。   
-如果用又拍 cdn，直接可通过 http://用户加速域名/play.domain.com/live/stream/recorder20160604163702.mp4 来访问
+如果用又拍 cdn，直接可通过 http://用户加速域名/play.domain.com/live/stream/recorder20160604163702.mp4 来访问。
 
 录制支持触发录制与定时录制两种方式。
 
