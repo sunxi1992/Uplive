@@ -14,7 +14,8 @@
 可选择性填写接入点，如果填写了具体的接入点，则只有该接入点的 URL 可进行推流，其他接入点均推流失败。若没有填写具
 体接入点，则任意接入点可进行推流（本阶段无论填什么接入点，均无限制作用，都可以正常推拉流，待服务版本更新再加入限制）。
 
-> 当推流域名填写 push.domain.com ，播放域名填写 play.domain.com ，接入点填写 app ，如果推流 URL 为 rtmp://push.domain.com/app/stream 时，其 rtmp 播放 URL 为 rtmp://play.domain.com/app/stream
+> 当推流域名填写 push.domain.com ，播放域名填写 play.domain.com ，接入点填写 app ，如果推流 URL 为 rtmp://push.domain.com/app/stream 时，其 rtmp 播放 URL 为 rtmp://play.domain.com/app/stream  
+以上域名、接入点及流名的命名仅为举例用，下同。
 > 其中，stream 为流名，又称流密钥，app/stream 又称为频道，同一条流推拉流域名不同，但频道名一致，下同。
 
 架构图片：客户源——又拍云加速中心（转码/录制）——用户观看端
@@ -58,7 +59,8 @@
 
 * 添加域名绑定后，需要到域名服务商的 DNS 解析管理中，将推流域名的 CNAME 解析到 `<bucket>.s1.aicdn.com`，将播放域名的 CNAME 解析到 `<bucket>.s0.aicdn.com`。
 
-> 当业务模式为又拍云源时，用户需要将其推流域名和播放域名分别 CNAME 到对应的又拍云内部域名。 推流内部域名为`<bucket>.s1.aicdn.com`，播放内部域名为`<bucket>.s0.aicdn.com`。
+> 当业务模式为又拍云源时，用户需要将其推流域名和播放域名分别 CNAME 到对应的又拍云内部域名。 推流内部域名为`<bucket>.s1.aicdn.com`，播放内部域名为`<bucket>.s0.aicdn.com`。  
+`<>`内的 bucket 需要替换成对应的服务名，下同。
 
 > 当业务模式为自主源站时，用户只需要将其播放域名 CNAME 到对应的又拍云播放内部域名`<bucket>.s0.aicdn.com`
 其中 `<bucket> `请用实际服务名称代替，下同。  
